@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>logout</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- My CSS -->
+    <link href="logout.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '360042667521839',
+                xfbml: true,
+                version: 'v2.2'
+            });
+        };
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="logout.js"></script>
+
+    <div class="container">
+        <div class="header">
+            <nav>
+                <!--
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul> -->
+            </nav>
+            <h3 class="text-muted">logout</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h1>logout</h1>
+            <p class="lead">Log out of popular sites in one click
+                <br><font size=3>Except twitter. Twitter is two clicks.</font>
+            </p>
+            <p>
+                <a class="btn btn-lg btn-success" href="https://accounts.google.com/Logout?hl=en&continue=https://www.google.co.uk/%3Fgfe_rd%3Dcr%26ei%3D7BjnVJWkPM-D8gPh2oHQCg&timeStmp=1424431341&secTok=.AG5fkS-1sNPfDF3Ia1fNuNScR1PTI0XcWQ" role="button">Google</a>
+                <a class="btn btn-lg btn-success" href="https://signin.ebay.co.uk/ws/eBayISAPI.dll?SignIn&lgout=1" role="button">ebay UK</a>
+                <a class="btn btn-lg btn-success" href="https://twitter.com/logout" role="button">Twitter<br></a>
+                <a class="btn btn-lg btn-success" href="https://login.live.com/logout.srf" role="button">Outlook</a>
+            </p>
+            <p>
+                <a class="btn btn-lg btn-success" href="#" onclick="changeText()" role="button" class="facebook"><span class="textClass">Facebook</span></a>
+                <a class="btn btn-lg btn-success" href="https://login.yahoo.com/config/login?logout=1&.direct=2&.src=fpctx&.intl=uk&.lang=en-GB&.done=https://uk.yahoo.com/" role="button">Yahoo</a>
+                <a class="btn btn-lg btn-success" href="http://www.amazon.co.uk/gp/flex/sign-out.html/ref=nav_gno_signout?ie=UTF8&action=sign-out" role="button">Amazon UK</a>
+            </p>
+            <p>
+                Want a site added? I hang out on espernet IRC with the name "Username"
+            </p>
+            <p>
+                <span class="textClass">this is a test</span>
+            </p>
+
+        </div>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
